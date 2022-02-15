@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import styled from "styled-components";
 
-const Sidebar = ({ page, setPage }) => {
+const Aside = ({ page, setPage }) => {
   console.log(`Sidebar says page is ${page}`);
   return (
     <Div>
@@ -17,4 +17,4 @@ const Sidebar = ({ page, setPage }) => {
 
 const Div = styled.div``;
 
-export default Sidebar;
+export default Aside;

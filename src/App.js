@@ -1,18 +1,27 @@
 import logo from "./logo.svg";
 
 import { useState } from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Aside";
 import Content from "./Content";
+import styled from "styled-components";
+import Header from "./Header";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
 function App() {
   const [page, setPage] = useState("Portfolio");
 
   return (
-    <div className="App">
+    <Wrapper>
+      <Header />
+      <Nav />
       <Sidebar page={page} setPage={setPage} />
       <Content page={page} setPage={setPage} />
-    </div>
+      <Footer />
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.main``;
 
 export default App;
