@@ -9,19 +9,19 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 
 function App() {
-  const [page, setPage] = useState("Portfolio");
-
   return (
     <Wrapper>
       <Header />
-      <Nav />
-      <Sidebar page={page} setPage={setPage} />
-      <Content page={page} setPage={setPage} />
+      <Content />
       <Footer />
     </Wrapper>
   );
 }
 
-const Wrapper = styled.main``;
+const Wrapper = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export default App;

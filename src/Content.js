@@ -1,13 +1,21 @@
 import React from "react";
 import Portfolio from "./Portfolio";
+import About from "./About";
+import Skills from "./Skills";
+import Contact from "./Contact";
+import styled from "styled-components";
 
-const Content = ({ page, setPage }) => {
-  console.log(`Sidebar says page is ${page}`);
+const Content = () => {
   return (
-    <div>
+    <main>
+      <About />
       <Portfolio />
-    </div>
+      <Skills />
+      <Contact />
+    </main>
   );
 };
+
+const Main = styled.main``;
 
 export default Content;
