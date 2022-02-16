@@ -22,11 +22,15 @@ const Nav = () => {
 
 const Wrapper = styled.nav`
   display: flex;
+  margin: auto;
 `;
 
 const Ul = styled.ul`
   display: flex;
   list-style-type: none;
+  width: 100%;
+  min-width: 350px;
+  justify-content: space-between;
 `;
 
 const Li = styled.li`
@@ -37,7 +41,12 @@ const JumpLink = styled.a.attrs((props) => ({
   href: props.href,
 }))`
   display: inline-block;
-  border: 1px solid black;
+  border: none;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline 1px;
+  }
 `;
 
 export default Nav;
