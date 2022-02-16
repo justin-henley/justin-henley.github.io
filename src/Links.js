@@ -1,19 +1,23 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import { social, resume } from "./text";
 
 const Links = () => {
   let key = 0;
+
   return (
     <Wrapper>
       {/* Resume Button */}
-      <Resume href={resume.link}>{resume.linkText}</Resume>
+      <Resume href={resume.link}>
+        <ResumeIcon icon={resume.faIcon} />
+        {resume.linkText}
+      </Resume>
       {/* Generates all social link buttons */}
-      {Object.entries(social).map(([it, val]) => {
+      {Object.entries(social).map(([, val]) => {
         return (
           <Social key={`links${key++}`} href={val.link}>
-            {val.icon}
-            {val.linkText}
+            <StyledIcon icon={val.faIcon} />
           </Social>
         );
       })}
@@ -21,15 +25,37 @@ const Links = () => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  width: 20em;
+  /* border: 1px solid darkslategray; */
+  /* border-radius: 2em; */
+  background-color: white;
+  color: black;
+`;
 
 const Resume = styled.a.attrs((props) => ({
   target: "blank",
   rel: "noopener noreferrer",
   href: props.href,
 }))`
-  display: inline-block;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: darkslategray;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em;
+  /*   border-radius: 2em 0 0 2em;
+ */
+  font-weight: 200;
+
+  &:hover {
+    /* transform: scale(0.9); */
+
+    /* font-weight: 400; */
+    text-decoration: underline;
+  }
 `;
 
 const Social = styled.a.attrs((props) => ({
@@ -37,8 +63,33 @@ const Social = styled.a.attrs((props) => ({
   rel: "noopener noreferrer",
   href: props.href,
 }))`
-  display: inline-block;
-  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export default Links;
+
+const Icon = ({ className, children, icon }) => (
+  <FontAwesomeIcon className={className} icon={icon}>
+    {children}
+  </FontAwesomeIcon>
+);
+
+const StyledIcon = styled(Icon)`
+  margin: 5px;
+  font-size: 2em;
+  color: darkslategray;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+const ResumeIcon = styled(Icon)`
+  font-size: 0.7em;
+  color: white;
+  padding: 0 0.25em 0 0;
+`;
