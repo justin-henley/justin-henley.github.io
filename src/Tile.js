@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { FaCode, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faArrowUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 // Receives an object containing the preview image, title, description, links to live and code
 const Tile = ({ proj }) => {
@@ -19,7 +23,7 @@ const Tile = ({ proj }) => {
             hoverColor=""
             hoverBgColor=""
           >
-            <FaExternalLinkSquareAlt style={{ verticalAlign: "middle" }} />
+            <StyledIcon icon={faArrowUpRightFromSquare} />
             <LinkText>&nbsp;Live</LinkText>
           </Link>
           <Link
@@ -29,7 +33,7 @@ const Tile = ({ proj }) => {
             hoverColor=""
             hoverBgColor=""
           >
-            <FaCode style={{ verticalAlign: "middle" }} />
+            <StyledIcon icon={faCode} />
             <LinkText>&nbsp;Code</LinkText>
           </Link>
         </Links>
@@ -101,5 +105,13 @@ const Link = styled.a.attrs((props) => ({
     transform: scale(1.2);
   }
 `;
+
+const Icon = ({ className, children, icon }) => (
+  <FontAwesomeIcon className={className} icon={icon}>
+    {children}
+  </FontAwesomeIcon>
+);
+
+const StyledIcon = styled(Icon)``;
 
 export default Tile;
