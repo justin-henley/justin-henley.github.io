@@ -79,3 +79,41 @@ export const nav = {
     text: "Contact",
   },
 };
+
+export const projects = [
+  {
+    title: "proj",
+    description: "Unit Conversions for Taiwanese (ROC) units of measure",
+    live: "https://justin-henley.github.io/Taiwanese-Units-Converter---React/",
+    code: "https://github.com/justin-henley/Taiwanese-Units-Converter---React",
+    img: "",
+  },
+  {
+    title: "proj",
+    description: "Cycle Taiwan",
+    live: "https://justin-henley.github.io/Cycle-Taiwan/",
+    code: "https://github.com/justin-henley/Cycle-Taiwan",
+    img: "",
+  },
+  {
+    title: "proj",
+    description: "WebGL Interactive Color Picker",
+    live: "https://justin-henley.github.io/WebGL-Color-Picker/",
+    code: "https://github.com/justin-henley/WebGL-Color-Picker",
+    img: "",
+  },
+  {
+    title: "proj",
+    description: "Acme Blogs",
+    live: "https://justin-henley.github.io/js_acme_blogs/",
+    code: "https://github.com/justin-henley/js_acme_blogs",
+    img: "",
+  },
+  {
+    title: "proj",
+    description: "portfolio page",
+    live: "https://justin-henley.github.io/",
+    code: "https://github.com/justin-henley/justin-henley.github.io",
+    img: "",
+  },
+];
