@@ -26,9 +26,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3em 0 2em 0;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  font-size: 2em;
+  padding: 0.5em;
+`;
 
 const Projects = styled.section`
   background-color: #fcfcfc;
