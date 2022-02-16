@@ -17,14 +17,16 @@ const Skills = () => {
   );
 };
 const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   max-width: 400px;
   margin: auto;
 `;
 
 const Title = styled.h1`
   text-align: center;
+  font-size: 2em;
+  padding: 0.5em;
 `;
 
 const SkillBox = styled.ul`
@@ -34,9 +36,15 @@ const SkillBox = styled.ul`
   justify-content: center;
 `;
 const Skill = styled.li`
-  background-color: papayawhip;
+  background-color: white;
   padding: 5px;
   margin: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: default;
+  }
 `;
 
 export default Skills;
