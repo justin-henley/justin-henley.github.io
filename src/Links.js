@@ -27,7 +27,8 @@ const Links = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  width: 20em;
+  width: 100%;
+  max-width: 22em;
   /* border: 1px solid darkslategray; */
   /* border-radius: 2em; */
   background-color: white;
@@ -84,7 +85,7 @@ const StyledIcon = styled(Icon)`
   color: darkslategray;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `;
 
