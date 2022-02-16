@@ -1,4 +1,11 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+// Importing here allows for passing icons into other files on import
+import { faEnvelope, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
+
 export const vars = {
   primary: "#3cdbc0",
 };
@@ -28,28 +35,29 @@ export const about = {
 export const resume = {
   link: "",
   linkText: "Resume",
+  faIcon: faFileLines,
 };
 
 export const social = {
   github: {
     link: "https://github.com/justin-henley",
     linkText: "Github",
-    icon: <FaGithub />,
+    faIcon: faGithub,
   },
   linkedin: {
     link: "https://www.linkedin.com/in/justin-henley/",
     linkText: "Linkedin",
-    icon: <FaLinkedin />,
+    faIcon: faLinkedin,
   },
   twitter: {
     link: "https://twitter.com/jah_dev",
     linkText: "Twitter",
-    icon: <FaTwitter />,
+    faIcon: faTwitterSquare,
   },
   email: {
     link: "",
     linkText: "E-mail",
-    icon: <FaEnvelope />,
+    faIcon: faEnvelope,
   },
 };
 
