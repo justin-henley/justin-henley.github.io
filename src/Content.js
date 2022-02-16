@@ -7,12 +7,12 @@ import styled from "styled-components";
 
 const Content = () => {
   return (
-    <main>
+    <Main>
       <About />
       <Portfolio />
       <Skills />
       <Contact />
-    </main>
+    </Main>
   );
 };
 
