@@ -6,7 +6,7 @@ import { about } from "./text";
 const Header = () => {
   return (
     <Wrapper>
-      <p>{about.header}</p>
+      {/* <p>{about.header}</p> */}
       <Nav />
     </Wrapper>
   );
