@@ -16,7 +16,12 @@ function App() {
 const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90vw;
+  margin: auto;
+
+  @media only screen and (min-width: 768px) {
+    width: 80vw;
+  }
 `;
 
 export default App;
