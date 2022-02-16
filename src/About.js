@@ -16,7 +16,7 @@ const About = () => {
 
 const Wrapper = styled.section`
   display: flex;
-  width: 80%;
+
   height: 20em;
   flex-direction: column;
   justify-content: space-between;
