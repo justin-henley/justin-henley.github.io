@@ -14,7 +14,7 @@ const Tile = ({ proj }) => {
 
       <Content>
         <Title>{proj?.title}</Title>
-        <Description>{proj?.descrip}</Description>
+        <Description>{proj?.description}</Description>
         <Links>
           <Link
             href={proj?.live}
@@ -24,7 +24,7 @@ const Tile = ({ proj }) => {
             hoverBgColor=""
           >
             <StyledIcon icon={faArrowUpRightFromSquare} />
-            <LinkText>&nbsp;Live</LinkText>
+            <LinkText>Live</LinkText>
           </Link>
           <Link
             href={proj?.code}
@@ -34,7 +34,7 @@ const Tile = ({ proj }) => {
             hoverBgColor=""
           >
             <StyledIcon icon={faCode} />
-            <LinkText>&nbsp;Code</LinkText>
+            <LinkText>Code</LinkText>
           </Link>
         </Links>
       </Content>
