@@ -1,22 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import Tile from "./Tile";
+import { projects } from "./text";
 
 const Portfolio = () => {
-  // Add portfolio details either here or as a separate file to import
-  const testProj = {
-    img: "",
-    title: "Cycle TW",
-    descrip: "Lorem ipsum blah blum blur",
-    live: "https://www.google.com",
-    code: "https://www.github.com",
-  };
+  let key = 0;
+
   return (
     <Wrapper id="portfolio">
       <Title>Portfolio</Title>
       <Projects>
-        <Tile proj={testProj} />
-        <Tile proj={testProj} />
+        {projects.map((project) => {
+          return <Tile proj={project} key={`proj${key++}`} />;
+        })}
       </Projects>
     </Wrapper>
   );
