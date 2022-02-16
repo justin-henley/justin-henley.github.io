@@ -42,15 +42,19 @@ const Tile = ({ proj }) => {
   );
 };
 const StyledTile = styled.article`
-  width: 20em;
+  width: 100%;
   height: 12em;
 
   display: flex;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 10px;
-  margin: 1em;
+  margin: 0.1em;
   background-color: white;
-  box-shadow: 0 5px 10px black;
+  box-shadow: 0 5px 10px gray;
+
+  @media only screen and (min-width: 768px) {
+    width: 20em;
+  }
 `;
 
 const Image = ({ className, src, alt }) => (
