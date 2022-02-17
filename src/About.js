@@ -6,8 +6,10 @@ import { about, vars } from "./text";
 const About = () => {
   return (
     <Wrapper id="about">
-      <Headline>{about.headline}</Headline>
-      <Sub>{about.sub}</Sub>
+      <div>
+        <Headline>{about.headline}</Headline>
+        <Sub>{about.sub}</Sub>
+      </div>
       <Blurb>{about.blurb}</Blurb>
       <Links />
     </Wrapper>
@@ -21,7 +23,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin: auto;
+  margin: 3em 0 3em 0;
 
   @media only screen and (min-width: 768px) {
     align-items: center;
@@ -30,13 +32,17 @@ const Wrapper = styled.section`
 
 const Headline = styled.h1`
   font-size: 2.5em;
-  color: ${vars.primary};
+  color: ${vars.headline};
+  /* padding: 1em 0 2em 0; */
 `;
 
 const Sub = styled.h2`
   font-size: 2em;
+  color: ${vars.textDark};
 `;
 
-const Blurb = styled.p``;
+const Blurb = styled.p`
+  color: ${vars.textMedium};
+`;
 
 export default About;
