@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Tile from "./Tile";
-import { projects } from "./text";
+import { projects, vars } from "./text";
 
 const Portfolio = () => {
   let key = 0;
@@ -22,12 +22,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3em 0 2em 0;
+  margin: 3em 0 0em 0;
 `;
 
 const Title = styled.h2`
   font-size: 2em;
-  padding: 0.5em;
+  padding: 0 0 0.5em 0;
+  color: ${vars.textMedium};
 `;
 
 const Projects = styled.section`

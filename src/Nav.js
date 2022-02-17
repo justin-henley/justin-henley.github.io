@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { nav } from "./text";
+import { nav, vars } from "./text";
 
 const Nav = () => {
   let key = 0;
@@ -43,6 +43,8 @@ const JumpLink = styled.a.attrs((props) => ({
   display: inline-block;
   border: none;
   text-decoration: none;
+  color: ${vars.textDark};
+  font-weight: bold;
 
   &:hover {
     text-decoration: underline 1px;

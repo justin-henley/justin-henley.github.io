@@ -6,7 +6,6 @@ import Nav from "./Nav";
 const Header = () => {
   return (
     <Wrapper>
-      {/* <p>{about.header}</p> */}
       <Nav />
     </Wrapper>
   );
@@ -15,7 +14,7 @@ const Header = () => {
 const Wrapper = styled.header`
   display: flex;
   width: 100%;
-  height: 5em;
+
   justify-content: space-between;
 `;
 

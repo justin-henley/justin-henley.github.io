@@ -17,7 +17,7 @@ const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
   width: 90vw;
-  margin: auto;
+  margin: 2em auto 2em auto;
 
   @media only screen and (min-width: 768px) {
     width: 100vw;
