@@ -6,11 +6,11 @@ import { about, vars } from "./text";
 const About = () => {
   return (
     <Wrapper id="about">
-      <div>
+      <Head>
         <Headline>{about.headline}</Headline>
         <Sub>{about.sub}</Sub>
-      </div>
-      <Blurb>{about.blurb}</Blurb>
+      </Head>
+      {/* <Blurb>{about.blurb}</Blurb> */}
       <Links />
     </Wrapper>
   );
@@ -19,7 +19,7 @@ const About = () => {
 const Wrapper = styled.section`
   display: flex;
 
-  height: 20em;
+  /* height: 12em; */
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -27,7 +27,12 @@ const Wrapper = styled.section`
 
   @media only screen and (min-width: 768px) {
     align-items: center;
+    /*  height: 12em; */
   }
+`;
+
+const Head = styled.div`
+  margin: 0 0 4em 0;
 `;
 
 const Headline = styled.h1`
