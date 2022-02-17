@@ -10,16 +10,17 @@ const Tile = ({ proj }) => {
   let key = 1;
   return (
     <StyledTile>
-      <Head>
-        <a href={proj.live} style={{ textDecoration: "none" }}>
+      <a href={proj.live} style={{ textDecoration: "none" }}>
+        <Head>
           <Title>{proj?.title}</Title>
-        </a>
-        <Tech>
-          {proj.tech.map((item) => {
-            return <TechItem key={`${proj.title}${item}`}>{item}</TechItem>;
-          })}
-        </Tech>
-      </Head>
+
+          <Tech>
+            {proj.tech.map((item) => {
+              return <TechItem key={`${proj.title}${item}`}>{item}</TechItem>;
+            })}
+          </Tech>
+        </Head>
+      </a>
       <Description>{proj?.description}</Description>
       <TileLinks proj={proj} />
     </StyledTile>
