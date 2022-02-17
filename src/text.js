@@ -8,6 +8,16 @@ import {
 
 export const vars = {
   primary: "#3cdbc0",
+  textDark: "#0f564a",
+  textMedium: "#333",
+  textLight: "gray",
+  headline: "#3cdbc0",
+  buttonText: "white",
+  buttonBackground: "#0f564a",
+  navLink: "",
+  live: "",
+  code: "",
+  h2: "",
 };
 
 export const skills = [
@@ -61,6 +71,11 @@ export const social = {
   },
 };
 
+export const copyright = {
+  name: "React Portfolio by Justin Henley",
+  source: "https://github.com/justin-henley/justin-henley.github.io",
+};
+
 export const nav = {
   about: {
     jump: "#about",
@@ -88,6 +103,7 @@ export const projects = [
     live: "https://justin-henley.github.io/Taiwanese-Units-Converter---React/",
     code: "https://github.com/justin-henley/Taiwanese-Units-Converter---React",
     img: "",
+    tech: ["JavaScript", "React" /* "styled-components" */],
   },
   {
     title: "Cycle Taiwan",
@@ -96,29 +112,33 @@ export const projects = [
     live: "https://justin-henley.github.io/Cycle-Taiwan/",
     code: "https://github.com/justin-henley/Cycle-Taiwan",
     img: "",
+    tech: ["HTML5", "CSS3"],
   },
   {
     title: "Color Picker",
     description:
-      "Written in WebGL to allow a user to select a color with a click or touch, and see the color and its RGB and hex values.",
+      "Allows a user to select a color with a click or touch, and see the color and its RGB and hex values.",
     live: "https://justin-henley.github.io/WebGL-Color-Picker/",
     code: "https://github.com/justin-henley/WebGL-Color-Picker",
     img: "",
+    tech: ["JavaScript", "WebGL"],
   },
   {
     title: "Acme Blogs",
     description:
-      "A demonstration blog written in vanilla JavaScript.  Pulls in JSON data and renders posts by user, with comments below each post.",
+      "Fetches JSON data from a REST API and renders posts by user, with comments below each post.",
     live: "https://justin-henley.github.io/js_acme_blogs/",
     code: "https://github.com/justin-henley/js_acme_blogs",
     img: "",
+    tech: ["JavaScript"],
   },
   {
     title: "Portfolio Page",
     description:
-      "This page, written in React and styled with CSS and Styled Components.",
+      "This page, built with React and styled with CSS and Styled Components.",
     live: "https://justin-henley.github.io/",
     code: "https://github.com/justin-henley/justin-henley.github.io",
     img: "",
+    tech: ["JavaScript", "React" /* "styled-components" */],
   },
 ];
