@@ -10,7 +10,7 @@ import {
 const Tile = ({ proj }) => {
   return (
     <StyledTile>
-      <Preview src={proj.img} alt="Preview image goes here" />
+      {/* <Preview src={proj.img} alt="Preview image goes here" /> */}
 
       <Content>
         <Title>{proj?.title}</Title>
@@ -47,13 +47,13 @@ const StyledTile = styled.article`
 
   display: flex;
   /* border-radius: 5px; */
-  padding: 10px;
-  margin: 0.1em;
+  padding: 1em;
+  margin: 0.5em;
   background-color: white;
   box-shadow: 0 5px 10px gray;
 
   @media only screen and (min-width: 768px) {
-    width: 20em;
+    width: 40%;
   }
 `;
 
@@ -73,6 +73,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Title = styled.h3`
