@@ -82,36 +82,41 @@ export const nav = {
 
 export const projects = [
   {
-    title: "proj",
-    description: "Unit Conversions for Taiwanese (ROC) units of measure",
+    title: "Unit Converter",
+    description:
+      "Unit conversions between Taiwanese (ROC), metric, and US customary units of measure.",
     live: "https://justin-henley.github.io/Taiwanese-Units-Converter---React/",
     code: "https://github.com/justin-henley/Taiwanese-Units-Converter---React",
     img: "",
   },
   {
-    title: "proj",
-    description: "Cycle Taiwan",
+    title: "Cycle Taiwan",
+    description:
+      "A responsive, mobile-first website dedicated to cycling in the island nation of Taiwan.",
     live: "https://justin-henley.github.io/Cycle-Taiwan/",
     code: "https://github.com/justin-henley/Cycle-Taiwan",
     img: "",
   },
   {
-    title: "proj",
-    description: "WebGL Interactive Color Picker",
+    title: "Color Picker",
+    description:
+      "Written in WebGL to allow a user to select a color with a click or touch, and see the color and its RGB and hex values.",
     live: "https://justin-henley.github.io/WebGL-Color-Picker/",
     code: "https://github.com/justin-henley/WebGL-Color-Picker",
     img: "",
   },
   {
-    title: "proj",
-    description: "Acme Blogs",
+    title: "Acme Blogs",
+    description:
+      "A demonstration blog written in vanilla JavaScript.  Pulls in JSON data and renders posts by user, with comments below each post.",
     live: "https://justin-henley.github.io/js_acme_blogs/",
     code: "https://github.com/justin-henley/js_acme_blogs",
     img: "",
   },
   {
-    title: "proj",
-    description: "portfolio page",
+    title: "Portfolio Page",
+    description:
+      "This page, written in React and styled with CSS and Styled Components.",
     live: "https://justin-henley.github.io/",
     code: "https://github.com/justin-henley/justin-henley.github.io",
     img: "",
