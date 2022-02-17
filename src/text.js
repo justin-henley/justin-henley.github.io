@@ -39,7 +39,7 @@ export const about = {
   header: "Justin Henley",
   headline: "Hello, I'm Justin Henley.",
   sub: "Software Engineer",
-  blurb: "asdkj akdjh asdkjhdkf giut viuhvf weqpod appof fhsd f sdfohdf fdsio",
+  blurb: "Lorem ipsum...",
 };
 
 export const resume = {
