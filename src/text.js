@@ -55,7 +55,7 @@ export const social = {
     faIcon: faTwitterSquare,
   },
   email: {
-    link: "",
+    link: "mailto:justin.a.henley@gmail.com",
     linkText: "E-mail",
     faIcon: faEnvelope,
   },
