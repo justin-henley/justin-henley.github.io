@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
-import { about } from "./text";
+/* import { about } from "./text"; */
 
 const Header = () => {
   return (
