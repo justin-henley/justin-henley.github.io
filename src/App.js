@@ -20,7 +20,8 @@ const Wrapper = styled.main`
   margin: auto;
 
   @media only screen and (min-width: 768px) {
-    width: 80vw;
+    width: 100vw;
+    max-width: 1200px;
   }
 `;
 
