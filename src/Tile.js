@@ -10,7 +10,7 @@ const Tile = ({ proj }) => {
   let key = 1;
   return (
     <StyledTile>
-      <a href={proj.live} style={{ textDecoration: "none" }}>
+      <a href={proj.live} target="blank" style={{ textDecoration: "none" }}>
         <Head>
           <Title>{proj?.title}</Title>
 
