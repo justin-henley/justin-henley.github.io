@@ -11,7 +11,9 @@ const Tile = ({ proj }) => {
   return (
     <StyledTile>
       <Head>
-        <Title>{proj?.title}</Title>
+        <a href={proj.live} style={{ textDecoration: "none" }}>
+          <Title>{proj?.title}</Title>
+        </a>
         <Tech>
           {proj.tech.map((item) => {
             return <TechItem key={`${proj.title}${item}`}>{item}</TechItem>;
