@@ -21,21 +21,22 @@ export const vars = {
 };
 
 export const skills = [
-  "C++",
   "Java",
+  "C++",
   "JavaScript",
-  "MongoDB",
-  "Express",
-  "React",
-  "Node.js",
+  /* "MongoDB",
+  "Express", */
+  "React.js",
+  /* "Node.js", */
   "PHP",
   "MySQL",
-  "HTML5",
-  "CSS3",
+  "SQL",
+  "HTML",
+  "CSS",
   "SASS",
   "Git",
   "Linux",
-  "OOP",
+  /* "OOP", */
 ];
 
 export const about = {
