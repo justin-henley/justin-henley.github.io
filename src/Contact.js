@@ -32,7 +32,7 @@ const Email = styled.a.attrs((props) => ({
   display: flex;
   align-items: center;
   text-decoration: none;
-  background-color: darkslategray;
+  background-color: ${vars.buttonBackground};
   color: white;
   font-size: 1.5em;
   padding: 0.5em;

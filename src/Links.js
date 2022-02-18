@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import { social, resume } from "./text";
+import { social, resume, vars } from "./text";
 
 const Links = () => {
   let key = 0;
@@ -30,8 +30,6 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 22em;
   align-items: center;
-  /* border: 1px solid darkslategray; */
-  /* border-radius: 2em; */
   background-color: white;
   color: black;
 `;
@@ -44,7 +42,7 @@ const Resume = styled.a.attrs((props) => ({
   display: flex;
   align-items: center;
   text-decoration: none;
-  background-color: darkslategray;
+  background-color: ${vars.buttonBackground};
   color: white;
   font-size: 1.5em;
   padding: 0.5em;
@@ -83,7 +81,7 @@ const Icon = ({ className, children, icon }) => (
 const StyledIcon = styled(Icon)`
   margin: 5px;
   font-size: 2em;
-  color: darkslategray;
+  color: ${vars.textDark};
 
   &:hover {
     transform: scale(1.1);
