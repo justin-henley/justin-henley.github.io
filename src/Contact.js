@@ -25,7 +25,7 @@ const Title = styled.h2`
 `;
 
 const Email = styled.a.attrs((props) => ({
-  target: "blank",
+  target: "_blank",
   rel: "noopener noreferrer",
   href: props.href,
 }))`

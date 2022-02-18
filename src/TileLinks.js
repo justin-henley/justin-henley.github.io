@@ -45,7 +45,7 @@ const LinkText = styled.p`
 `;
 
 const Link = styled.a.attrs((props) => ({
-  target: "blank",
+  target: "_blank",
   rel: "noopener noreferrer",
   href: props?.href,
 }))`

@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const Resume = styled.a.attrs((props) => ({
-  target: "blank",
+  target: "_blank",
   rel: "noopener noreferrer",
   href: props.href,
 }))`
@@ -59,7 +59,7 @@ const Resume = styled.a.attrs((props) => ({
 `;
 
 const Social = styled.a.attrs((props) => ({
-  target: "blank",
+  target: "_blank",
   rel: "noopener noreferrer",
   href: props.href,
 }))`
