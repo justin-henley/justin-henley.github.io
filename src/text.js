@@ -33,6 +33,9 @@ export const skills = [
   "HTML5",
   "CSS3",
   "SASS",
+  "Git",
+  "Linux",
+  "OOP",
 ];
 
 export const about = {
