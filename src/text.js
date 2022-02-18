@@ -46,7 +46,7 @@ export const about = {
 };
 
 export const resume = {
-  link: "",
+  link: "https://drive.google.com/file/d/19JlzTNJJiYCwMQRmtqWKjqh7VN1VPj4w/view?usp=sharing",
   linkText: "Resume",
   faIcon: faFileLines,
 };
