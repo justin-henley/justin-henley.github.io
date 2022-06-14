@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { vars } from "./text";
-import TileLinks from "./TileLinks";
+import { vars } from './text';
+import TileLinks from './TileLinks';
 
 // Receives an object containing the preview image, title, description, links to live and code
 const Tile = ({ proj }) => {
   let key = 1;
   return (
     <StyledTile>
-      <a href={proj.live} target="blank" style={{ textDecoration: "none" }}>
+      <a href={proj.live} target="blank" style={{ textDecoration: 'none' }}>
         <Head>
           <Title>{proj?.title}</Title>
 
@@ -58,7 +58,7 @@ const Description = styled.p`
 
 const StyledTile = styled.article`
   width: 100%;
-  height: 12em;
+  /* height: 12em; */
 
   display: flex;
   flex-direction: column;

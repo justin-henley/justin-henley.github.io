@@ -1,11 +1,8 @@
-import React from "react";
-import { vars } from "./text";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { vars } from './text';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const TileLinks = ({ proj }) => {
   return (
@@ -45,8 +42,8 @@ const LinkText = styled.p`
 `;
 
 const Link = styled.a.attrs((props) => ({
-  target: "_blank",
-  rel: "noopener noreferrer",
+  target: '_blank',
+  rel: 'noopener noreferrer',
   href: props?.href,
 }))`
   display: inline-block;
@@ -55,7 +52,7 @@ const Link = styled.a.attrs((props) => ({
   border: 1px solid ${vars.buttonBackground};
   transition: all 0.2s ease-in-out;
   padding: 0.25em;
-  margin: 0.1em;
+  margin: 0.5em 0.1em 0 0.1em;
   color: ${vars.buttonBackground};
   background-color: ${vars.buttonText};
 
