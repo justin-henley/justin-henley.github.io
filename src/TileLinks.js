@@ -52,7 +52,7 @@ const Link = styled.a.attrs((props) => ({
   border: 1px solid ${vars.buttonBackground};
   transition: all 0.2s ease-in-out;
   padding: 0.25em;
-  margin: 0.5em 0.1em 0 0.1em;
+  margin: 0.1em;
   color: ${vars.buttonBackground};
   background-color: ${vars.buttonText};
 

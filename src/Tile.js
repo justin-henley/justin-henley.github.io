@@ -54,6 +54,7 @@ const TechItem = styled.li`
 
 const Description = styled.p`
   color: ${vars.textMedium};
+  padding: 1em 0;
 `;
 
 const StyledTile = styled.article`
