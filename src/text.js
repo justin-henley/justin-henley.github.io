@@ -1,10 +1,6 @@
 // Importing here allows for passing icons into other files on import
 import { faEnvelope, faFileLines } from '@fortawesome/free-solid-svg-icons';
-import {
-  faGithub,
-  faLinkedin,
-  faTwitterSquare,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 export const vars = {
   primary: '#3cdbc0',
@@ -109,21 +105,20 @@ export const projects = [
     live: 'https://menu-translation-frontend.herokuapp.com/',
     code: 'https://github.com/justin-henley/menu-translation-frontend',
     img: '',
-    tech: ['React', 'React Router', 'Bootstrap', 'CSS'],
+    tech: ['React', 'React Router', 'Bootstrap' /* 'CSS' */],
   },
   {
     title: 'Eatt - Back End',
     description:
-      'Connects the Eatt website to a MongoDB database through a RESTful API. Allows for CRUD operations on individual dishes and menus.',
+      'A RESTful API connected to the Eatt MongoDB database. Allows for CRUD operations on individual dishes and menus.',
     live: null,
     code: 'https://github.com/justin-henley/Menu-Translation-Backend-MERN',
     img: '',
-    tech: ['Node', 'Express', 'Mongoose', 'REST'],
+    tech: ['Node', 'Express', 'Mongoose' /* 'REST' */],
   },
   {
     title: 'Unit Converter',
-    description:
-      'Unit conversions between Taiwanese (ROC), metric, and US customary units of measure.',
+    description: 'Unit conversions between Taiwanese (ROC), metric, and US customary units of measure.',
     live: 'https://justin-henley.github.io/Taiwanese-Units-Converter---React/',
     code: 'https://github.com/justin-henley/Taiwanese-Units-Converter---React',
     img: '',
@@ -131,8 +126,7 @@ export const projects = [
   },
   {
     title: 'Cycle Taiwan',
-    description:
-      'A responsive, mobile-first website dedicated to cycling in the island nation of Taiwan.',
+    description: 'A responsive, mobile-first website dedicated to cycling in the island nation of Taiwan.',
     live: 'https://justin-henley.github.io/Cycle-Taiwan/',
     code: 'https://github.com/justin-henley/Cycle-Taiwan',
     img: '',
@@ -149,8 +143,7 @@ export const projects = [
   }, */
   {
     title: 'Acme Blogs',
-    description:
-      'Fetches JSON data from a REST API and renders posts by user, with comments below each post.',
+    description: 'Fetches JSON data from a REST API and renders posts by user, with comments below each post.',
     live: 'https://justin-henley.github.io/js_acme_blogs/',
     code: 'https://github.com/justin-henley/js_acme_blogs',
     img: '',
@@ -158,8 +151,7 @@ export const projects = [
   },
   {
     title: 'Portfolio Page',
-    description:
-      'This page, built with React and styled with CSS and Styled Components.',
+    description: 'This page, built with React and styled with CSS and Styled Components.',
     live: 'https://justin-henley.github.io/',
     code: 'https://github.com/justin-henley/justin-henley.github.io',
     img: '',
