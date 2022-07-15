@@ -102,10 +102,10 @@ export const projects = [
     title: 'Eatt - Front End',
     description:
       'A bilingual Mandarin-English dish and menu translation app, enabling travelers to eat more adventurously.',
-    live: 'https://menu-translation-frontend.herokuapp.com/',
+    live: 'https://eatt-frontend-prod.herokuapp.com/dishes',
     code: 'https://github.com/justin-henley/menu-translation-frontend',
     img: '',
-    tech: ['React', 'React Router', 'Bootstrap' /* 'CSS' */],
+    tech: ['React', 'Next.js', 'Bootstrap' /* 'CSS' */],
   },
   {
     title: 'Eatt - Back End',
