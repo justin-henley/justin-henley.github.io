@@ -103,7 +103,7 @@ export const projects = [
     description:
       'A bilingual Mandarin-English dish and menu translation app, enabling travelers to eat more adventurously.',
     live: 'https://eatt-frontend-prod.herokuapp.com/dishes',
-    code: 'https://github.com/justin-henley/menu-translation-frontend',
+    code: 'https://github.com/justin-henley/eatt-frontend',
     img: '',
     tech: ['React', 'Next.js', 'Bootstrap' /* 'CSS' */],
   },
@@ -112,7 +112,7 @@ export const projects = [
     description:
       'A RESTful API connected to the Eatt MongoDB database. Allows for CRUD operations on individual dishes and menus.',
     live: null,
-    code: 'https://github.com/justin-henley/Menu-Translation-Backend-MERN',
+    code: 'https://github.com/justin-henley/eatt-backend',
     img: '',
     tech: ['Node', 'Express', 'Mongoose' /* 'REST' */],
   },
