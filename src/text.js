@@ -61,11 +61,11 @@ export const social = {
     linkText: 'Linkedin',
     faIcon: faLinkedin,
   },
-  twitter: {
+  /* twitter: {
     link: 'https://twitter.com/jah_dev',
     linkText: 'Twitter',
     faIcon: faTwitterSquare,
-  },
+  }, */
   email: {
     link: 'mailto:justin.a.henley@gmail.com',
     linkText: 'E-mail',
